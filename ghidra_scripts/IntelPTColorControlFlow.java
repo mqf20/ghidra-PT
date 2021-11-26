@@ -45,7 +45,7 @@ public class IntelPTColorControlFlow extends GhidraScript {
 				if (line.startsWith("[")) {
 					continue;
 				}
-				String[] tokens = line.split(" ");
+				String[] tokens = line.split("  "); // ptxed uses two spaces for delimiter
 				if (tokens.length < 2) {
 					continue;
 				}
